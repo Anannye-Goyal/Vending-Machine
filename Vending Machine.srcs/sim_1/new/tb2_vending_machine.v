@@ -98,7 +98,7 @@ module tb2_vending_machine;
     wait (out_of_stock);
     # (CLK_PERIOD_NS);
 
-    // ------------ TESTCASE 4: Timeout and then refund 
+    // TESTCASE 4: Timeout and then refund 
     wait (ready);
     // Select item 4
     @(posedge clk); sel <= 3'd4;
