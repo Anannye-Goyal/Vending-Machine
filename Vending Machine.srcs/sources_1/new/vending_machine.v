@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Create Date: 15.06.2025 14:43:15
 // Design Name: Simple Vending Machine
 // Module Name: vending_machine
 // Project Name: Vending Machine
