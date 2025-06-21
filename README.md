@@ -9,7 +9,7 @@ It can accept two types of coin (50, 100), allows selection of five distinct ite
 - **Item Selection**: Can select 5 products, having its own price and stock.  
 - **Dispensing**: Automatically dispenses when enough credit is accumulated.  
 - **Refund/Cancellation**: User can cancel at any time before dispensing and gets an immediate refund.  
-- **Out‑of‑Stock Detection**: Disables selection and flags “out of stock” for items not in stock.  
+- **Out‑of‑Stock Detection**: Flags “out of stock” for items not in stock.  
 
 
 ## Main module
