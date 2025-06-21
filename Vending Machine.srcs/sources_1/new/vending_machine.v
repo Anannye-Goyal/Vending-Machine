@@ -20,7 +20,7 @@ module vending_machine(input clk,
     
     reg [31:0] timer_cnt;
     parameter clk_period_ns = 10;        // 10 ns period  100 MHz
-    parameter timeout_nano_secs = 100;    // timeout in 30 ns
+    parameter timeout_nano_secs = 100;    // timeout in 100 ns
     parameter timeout_limit = timeout_nano_secs / clk_period_ns;
     wire timer_expired = (timer_cnt >= timeout_limit);
     
