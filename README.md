@@ -32,7 +32,7 @@ module vending_machine(
 
 ## Price Structure
 
-| Item Number (`sel`) | Item Name | Price (¢) | Initial Stock |
+| Item Number (`sel`) | Item Name | Price     | Initial Stock |
 |:-------------------:|:---------:|:---------:|:-------------:|
 | 1                   | Chips     | 50        | 5             |
 | 2                   | Juice     | 100       | 5             |
