@@ -50,10 +50,10 @@ module vending_machine(
 | COIN_INSERT   | Credit >= Price                              | DISPENSE      | Item will get dispensed           |
 | COIN_INSERT   | Cancel = 1                                   | REFUND        | Money will be refunded            |
 | COIN_INSERT   | Timeout                                      | REFUND        | Money will be refunded            |
-| DISPENSE      | ----------x-----------                       | CHANGE        | Change will be given              |
-| DISPENSE      | Item stock = 0                               | CHANGE        | Change will be given              |
+| COIN_INSERT   | Item stock = 0                               | REFUND        | Money will be refunded            |
+| DISPENSE      | ----------x-----------                       | CHANGE_RETURN | Change will be given              |
 | REFUND        | ----------x-----------                       | IDLE          | Money refunded                    |
-| CHANGE        | ----------x-----------                       | IDLE          | Money given back                  |
+| CHANGE_RETURN | ----------x-----------                       | IDLE          | Money given back                  |
 
 
 ## Test Cases
