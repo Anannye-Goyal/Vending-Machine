@@ -40,6 +40,22 @@ module vending_machine(
 | 4                   | Chocolate | 200       | 5             |
 | 5                   | Cupcake   | 250       | 5             |
 
+## State Table
+
+| Current State | Input Condition                              | Next State    | Action to be Performed            |
+|---------------|----------------------------------------------|---------------|-----------------------------------|
+| IDLE          | Sel = 0                                      | IDLE          | Enter a valid Select              |
+| IDLE          | Sel != 0                                     | COIN_INSERT   | Insert money                      |
+| COIN_INSERT   | Credit < Price                               | COIN_INSERT   | Insert money                      |
+| COIN_INSERT   | Credit >= Price                              | DISPENSE      | Item will get dispensed           |
+| COIN_INSERT   | Cancel = 1                                   | REFUND        | Money will be refunded            |
+| COIN_INSERT   | Timeout                                      | REFUND        | Money will be refunded            |
+| DISPENSE      | ----------x-----------                       | CHANGE        | Change will be given              |
+| DISPENSE      | Item stock = 0                               | CHANGE        | Change will be given              |
+| REFUND        | ----------x-----------                       | IDLE          | Money refunded                    |
+| CHANGE        | ----------x-----------                       | IDLE          | Money given back                  |
+
+
 ## Test Cases
 
 ### TC1: Exact‑Price Purchase
